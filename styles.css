@@ -16,37 +16,37 @@ footer {
   font-family: sans-serif;
 }
 /* SaReGaMaPaDhaNi */
-.Sa{
+.s{
   background-image: url("images/tom1.png");
   cursor:pointer;
 }
 
-.Re {
+.r {
   background-image: url("images/tom2.png");
   cursor:pointer;
 }
 
-.Ga {
+.g {
   background-image: url("images/tom3.png");
   cursor:pointer;
 }
 
-.Ma {
+.m {
   background-image: url("images/tom4.png");
   cursor:pointer;
 }
 
-.Pa {
+.p {
   background-image: url("images/snare.png");
   cursor:pointer;
 }
 
-.Da {
+.d {
   background-image: url("images/crash.png");
   cursor:pointer;
 }
 
-.Ni {
+.n {
   background-image: url("images/kick.png");
   cursor:pointer;
 }
@@ -56,8 +56,8 @@ footer {
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.9;
+  box-shadow: 0 3px 4px 0 #ffffff;
+  opacity: 1;
 }
 
 .red {

@@ -1,11 +1,12 @@
 console.log("hello");
 var numberofdrumbtn = document.querySelectorAll(".drum").length;
 
-for (i = 0; i <= numberofdrumbtn; i++) {
+for (i = 0; i < numberofdrumbtn; i++) {
     document.querySelectorAll("button")[i].addEventListener("click", function () {
             console.log(this.className); //we can also user instead of innerHTML
         var aud = this.innerHTML;
         makesound(aud);
+        makeanim(aud);
        
 
     });
@@ -15,6 +16,7 @@ for (i = 0; i <= numberofdrumbtn; i++) {
 document.addEventListener("keypress",function(event){
     console.log(event.key);
     makesound(event.key);
+    makeanim(event.key)
 })
 
 
@@ -65,7 +67,16 @@ function makesound(key){
 }
 
 
+function makeanim(currentkey){
 
+    let activebtn=document.querySelector("."+currentkey)
+    activebtn.classList.add("pressed");
+
+    setTimeout(() => {
+        activebtn.classList.remove("pressed");
+    }, 500);
+
+}
 
 
 
